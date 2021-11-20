@@ -29,4 +29,5 @@ class Spaceship extends Floater{
   }
   public void setmyCenterY(int b){
     myCenterY = b;
+  }
 }
