@@ -23,7 +23,7 @@ public void draw(){
       tom.setmyCenterX((int)(Math.random()*500));
       tom.setmyCenterY((int)(Math.random()*500));
     }
-    if(key == ' '){
+    if(key == 'w'){
       tom.accelerate(0.1);
     }
   }
