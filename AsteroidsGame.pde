@@ -1,11 +1,12 @@
 Star[] bob;
 Spaceship tom;
-ArrayList <Asteroid> rob = new ArrayList<Asteroid>();
+ArrayList <Asteroid> rob;
 public void setup(){
   size(500, 500);
   background(0, 0, 25);
   tom = new Spaceship();
   bob = new Star[50];
+  rob = new ArrayList<Asteroid>();
   for(int i = 0; i < bob.length; i++)
     bob[i] = new Star();
   for(int i = 0; i < 25; i++)
@@ -41,7 +42,8 @@ public void draw(){
     rob.get(i).move();
     rob.get(i).show();
     float d = dist((float)tom.getX(), (float)tom.getY(), (float)rob.get(i).getCenterX(), (float)rob.get(i).getCenterY());
-    if(d < 10)
+    if(d < 10){
       rob.remove(i);
+    }
   }
 }
