@@ -41,7 +41,7 @@ public void draw(){
     rob.get(i).move();
     rob.get(i).show();
     float d = dist((float)tom.getX(), (float)tom.getY(), (float)rob.get(i).getCenterX(), (float)rob.get(i).getCenterY());
-    if(d < 1)
+    if(d < 10)
       rob.remove(i);
   }
 }
